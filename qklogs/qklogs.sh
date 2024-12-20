@@ -94,7 +94,7 @@ if [ -f "$OUTPUT_DIR/merged.zip" ]; then
         unzip "$OUTPUT_DIR/merged.zip" -d "$OUTPUT_DIR/merged"
     fi
 
-    if [[ "${DELETE_WHEN_OPERATION_COMPLETED}" == 1 ]]; then
+    if [[ "${LOG_DELETE_WHEN_OPERATION_COMPLETED}" == 1 ]]; then
         echo "ℹ️  Deleting merged.zip ..."
         rm "$OUTPUT_DIR/merged.zip"
     fi
